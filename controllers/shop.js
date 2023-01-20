@@ -70,5 +70,9 @@ exports.getIndex = (req, res, next)=>{
     //res.redirect('/');
  }
 
- 
+exports.postCart = (req,res,next) => {
+    const prodId = req.body.productId;
+    console.log(prodId);
+    res.redirect('/');
+}
  //https://m.media-amazon.com/images/I/41stpPRWFtL._AC_SX466_.jpg
